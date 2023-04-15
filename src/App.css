@@ -1,9 +1,11 @@
 .App{
   padding: 30px;
   display: flex;
+  border-radius: 1px solid grey;
 }
 .App > div{
-  margin-right: 50px;
+  margin: 50px 20px;
+  
 }
 .error-message{
   color: red;
@@ -13,5 +15,46 @@
   border: 1px solid red;
 }
 .active-filter{
-  background-color: rgb(46, 140, 212);
+  background-color: rgb(100 97 102);
+  color: white;
+  font-weight: 400;
+  border: 1px solid black;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+.simpleBtn{
+    background-color: rgb(100 97 102 / 0%);
+    color: black;
+    font-weight: 400;
+    border: 1px solid black;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.removeTodolistBtn{
+  background-color: white;
+  border: 2px solid #f44336;
+  cursor: pointer;
+}
+.removeTodolistBtn:hover{
+  background-color:#f44336;
+
+}
+.removeTaskBtn{
+  background-color:#f44336;
+  color: white;
+  margin: 20px 10px;
+  cursor:pointer;
+  border: 1px solid grey;
+}
+.removeTaskBtn:hover{
+  background-color:#fc7c73d6;
+}
+ul {
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
 }

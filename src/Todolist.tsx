@@ -51,8 +51,9 @@ export function Todolist(props: PropsType){
   }
   return (
     <div>
+      <button onClick={removeTodolist} className="button removeTodolistBtn">X</button>
       <h3>{props.title}</h3>
-      <button onClick={removeTodolist}>X</button>
+      
       <div>
         <input 
         onKeyPress={onKeyPressHandler}
@@ -78,18 +79,18 @@ export function Todolist(props: PropsType){
               onChange={onChangeHandler} 
               checked={t.isDone}/>
               <span>{t.title}</span>
-              <button onClick={onRemoveHandler}>X</button>
+              <button onClick={onRemoveHandler} className="removeTaskBtn">x</button>
             </li>
           })
         }
         
       </ul>
       <div>
-        <button className={props.filter === 'all' ? "active-filter": ""}
+        <button className={props.filter === 'all' ? "active-filter": "simpleBtn"}
         onClick={onAllClickHandler}>All</button>
-        <button className={props.filter === 'active' ? "active-filter": ""}
+        <button className={props.filter === 'active' ? "active-filter": "simpleBtn"}
         onClick={onActiveClickHandler}>Active</button>
-        <button className={props.filter === 'completed' ? "active-filter": ""}
+        <button className={props.filter === 'completed' ? "active-filter": "simpleBtn"}
         onClick={onComplitedClickHandler}>Complited</button>
       </div>
     </div>
