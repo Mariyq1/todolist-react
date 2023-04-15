@@ -5,3 +5,13 @@
 .App > div{
   margin-right: 50px;
 }
+.error-message{
+  color: red;
+
+}
+.error{
+  border: 1px solid red;
+}
+.active-filter{
+  background-color: teal;
+}
